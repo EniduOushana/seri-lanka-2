@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./CSS/checkout.css">s
+    <link rel="icon" href="./Images/main-logo.png" type="image/x-icon">
+
+    <script defer src="checkout.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <main>
+        <!-- Order Summary -->
+        <section id="order-summary">
+            <h2>Your Order</h2>
+            <table id="summaryTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="orderDetails">
+                    <!-- Order items will be dynamically inserted here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Total</strong></td>
+                        <td id="summaryTotal">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Personal Details Form -->
+        <section id="personal-details">
+            <h2>Enter Your Details</h2>
+            <form id="checkoutForm">
+                <label>
+                    Full Name:
+                    <input type="text" id="fullName" required>
+                </label>
+                <label>
+                    Email Address:
+                    <input type="email" id="email" required>
+                </label>
+                <label for="telePhone">Phone Number:</label>
+                    <input type="tel" id="telePhone" maxlength="10" required placeholder="Enter 10-digit phone number">
+                </label>
+                <label>
+                    Delivery Address:
+                    <textarea id="address" rows="4" required></textarea>
+                </label>
+                <label>
+                    Payment Method:
+                    <select id="paymentMethod" required>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cash-on-delivery">Cash on Delivery</option>
+                    </select>
+                </label>
+                <button type="button" id="payButton">Pay</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

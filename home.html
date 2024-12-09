@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/search.css">
+    <script defer src="./script.js"></script>
+    <script defer src="./search.js"></script>
+    <script src="https://kit.fontawesome.com/f63a850ea0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./Images/main-logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      
+        <div class="search-container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            <div class="navigation">
+                <nav class="navbar">
+                    <a href="#Analgesics-sec" style="--i:0;">Analgesics</a>
+                    <a href="#Antibiotics-sec" style="--i:0;">Antibiotics</a>
+                    <a href="#Antidepressants-sec" style="--i:0;">Antidepressants</a>
+                    <a href="#Antihistamines-sec" style="--i:0;">Antihistamines</a>
+                    <a href="#Antihypertensives-sec" style="--i:0;">Antihypertensives</a>
+                </nav>
+            </div>
+            <div class="search-wrapper">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <p id="no-results-message" style="display: none; color: red; text-align: center;">No results found</p>
+        </div>
+    </header>
+    <h1>Pharmacy Order Page</h1>
+    <main>
+        <!-- Medicine Selection Form -->
+        <form id="medicineForm">
+    
+    <section class="category"></section>
+        <!-- Analgesics Section -->
+        
+        <section id="Analgesics-sec">
+            <h2>Analgesics</h2>
+            <div class="medicine-item">
+                <img src="./Images/ibuprofen.jpg" alt="Ibuprofen">
+                <div class="medicine-info">
+                    <p><strong>Ibuprofen </strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $5 per unit</strong></p>
+                    <p>A common pain reliever for headaches, fever, and minor aches. </p>
+                    <label>Quantity: <input type="number" name="ibuprofen" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/aspirin.jpg" alt="Aspirin">
+                <div class="medicine-info">
+                    <p><strong>Aspirin</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $3 per unit</strong></p>
+                    <p>Used to reduce fever, pain, and inflammation.</p>
+                    <label>Quantity: <input type="number" name="aspirin" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/tramadol.jpg" alt="Tramadol">
+                <div class="medicine-info">
+                    <p><strong>Tramadol</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $8 per unit</strong></p>
+                    <p> Alleviates pain, inflammation, and fever; prevents blood clots.</p>
+                    <label>Quantity: <input type="number" name="Tramadol" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/morphine.jpeg" alt="Morphine">
+                <div class="medicine-info">
+                    <p><strong>Morphine</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $20 per unit</strong></p>
+                    <p> Potent opioid for severe pain, used in cancer and surgery cases.</p>
+                    <label>Quantity: <input type="number" name="Morphine" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/naproxen.jpg" alt="Naproxen">
+                <div class="medicine-info">
+                    <p><strong>Naproxen</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $6 per unit</strong></p>
+                    <p>Treats inflammatory pain, including arthritis and menstrual cramps.</p>
+                    <label>Quantity: <input type="number" name="Naproxen" min="0" value="0"></label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Antibiotics Section -->
+        <section id="Antibiotics-sec">
+            <h2>Antibiotics</h2>
+            <div class="medicine-item">
+                <img src="./Images/Amoxicillin.jpg" alt="Amoxicillin">
+                <div class="medicine-info">
+                    <p><strong>Amoxicillin</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $10 per unit</strong></p>
+                    <p>Used to treat various bacterial infections.</p>
+                    <label>Quantity: <input type="number" name="amoxicillin" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Ciprofloxacin.jpg" alt="Ciprofloxacin">
+                <div class="medicine-info">
+                    <p><strong>Ciprofloxacin</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $15 per unit</strong></p>
+                    <p>A broad-spectrum antibiotic for different types of infections.</p>
+                    <label>Quantity: <input type="number" name="ciprofloxacin" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Metronidazole.jpg" alt="Metronidazole">
+                <div class="medicine-info">
+                    <p><strong>Metronidazole</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $12 per unit</strong></p>
+                    <p> Treats anaerobic infections and some sexually transmitted diseases.</p>
+                    <label>Quantity: <input type="number" name="Metronidazole" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Azithromycin.jpg" alt="Azithromycin">
+                <div class="medicine-info">
+                    <p><strong>Azithromycin</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $18 per unit</strong></p>
+                    <p>Treats respiratory and skin infections, including strep throat.</p>
+                    <label>Quantity: <input type="number" name="Azithromycin" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Doxycycline.jpg" alt="Doxycycline">
+                <div class="medicine-info">
+                    <p><strong>Doxycycline</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $14 per unit</strong></p>
+                    <p>Used for bacterial infections, including Lyme disease and acne.</p>
+                    <label>Quantity: <input type="number" name="Doxycycline" min="0" value="0"></label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Antidepressants Section -->
+        <section id="Antidepressants-sec">
+            <h2>Antidepressants</h2>
+            <div class="medicine-item">
+                <img src="./Images/Fluoxetine.jpg" alt="Fluoxetine">
+                <div class="medicine-info">
+                    <p><strong>Fluoxetine</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $25 per unit</strong></p>
+                    <p>Treats depression, anxiety, and obsessive-compulsive disorder effectively.</p>
+                    <label>Quantity: <input type="number" name="fluoxetine" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Sertraline.webp" alt="Sertraline">
+                <div class="medicine-info">
+                    <p><strong>Sertraline</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $30 per unit</strong></p>
+                    <p>Helps manage depression, panic attacks, and PTSD symptoms.</p>
+                    <label>Quantity: <input type="number" name="sertraline" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Amitriptyline.webp" alt="Amitriptyline">
+                <div class="medicine-info">
+                    <p><strong>Amitriptyline</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $22 per unit</strong></p>
+                    <p>Used for depression, also alleviates nerve pain and migraines.</p>
+                    <label>Quantity: <input type="number" name="Amitriptyline" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Citalopram.jpg" alt="Citalopram">
+                <div class="medicine-info">
+                    <p><strong>Citalopram</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $28 per unit</strong></p>
+                    <p>SSRI managing depression and associated anxiety disorders.</p>
+                    <label>Quantity: <input type="number" name="Citalopram" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Escitalopram.jpg" alt="Escitalopram">
+                <div class="medicine-info">
+                    <p><strong>Escitalopram</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $32 per unit</strong></p>
+                    <p>Treats major depressive and generalized anxiety disorders.</p>
+                    <label>Quantity: <input type="number" name="Escitalopram" min="0" value="0"></label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Antihistamines Section -->
+        <section id="Antihistamines-sec">
+            <h2>Antihistamines</h2>
+            <div class="medicine-item">
+                <img src="./Images/Diphenhydramine.jpg" alt="Diphenhydramine">
+                <div class="medicine-info">
+                    <p><strong>Diphenhydramine</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $5 per unit</strong></p>
+                    <p>Relieves allergy symptoms, hay fever, and motion sickness.</p>
+                    <label>Quantity: <input type="number" name="diphenhydramine" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Loratadine.webp" alt="Loratadine">
+
+                <div class="medicine-info">
+                    <p><strong>Loratadine</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $7 per unit</strong></p>
+                    <p>Non-drowsy relief for hay fever and seasonal allergy symptoms.</p>
+                    <label>Quantity: <input type="number" name="loratadine" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Cetirizine.webp" alt="Cetirizine">
+
+                <div class="medicine-info">
+                    <p><strong>Cetirizine</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $6 per unit</strong></p>
+                    <p>Reduces seasonal allergies and chronic urticaria symptoms.</p>
+                    <label>Quantity: <input type="number" name="Cetirizine" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Fexofenadine.jpg" alt="Fexofenadine">
+
+                <div class="medicine-info">
+                    <p><strong>Fexofenadine</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $9 per unit</strong></p>
+                    <p>Long-lasting relief for hay fever and skin allergy symptoms.</p>
+                    <label>Quantity: <input type="number" name="Fexofenadine" min="0" value="0"></label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Antihypertensives Section -->
+        <section id="Antihypertensives-sec">
+            <h2>Antihypertensives</h2>
+            <div class="medicine-item">
+                <img src="./Images/Amlodipine.webp" alt="Amlodipine">
+                <div class="medicine-info">
+                    <p><strong>Amlodipine</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $12 per unit</strong></p>
+                    <p>Calcium channel blocker to manage high blood pressure effectively.</p>
+                    <label>Quantity: <input type="number" name="amlodipine" min="0" value="0"></label>
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="./Images/Lisinopril.jpg" alt="Lisinopril">
+                <div class="medicine-info">
+                    <p><strong>Lisinopril</strong></p>
+                    <p style="color: rgb(105, 105, 105);"><strong>Price: $15 per unit</strong></p>
+                    <p>ACE inhibitor used to lower blood pressure and improve heart health.</p>
+                    <label>Quantity: <input type="number" name="lisinopril" min="0" value="0"></label>
+                </div>   
+            </div>                                                                                                                                             
+                <div class="medicine-item">
+                    <img src="./Images/Losartan.jpg" alt="Losartan">
+                    <div class="medicine-info">
+                        <p><strong>Losartan</strong></p>
+                        <p style="color: rgb(105, 105, 105);"><strong>Price: $18 per unit</strong></p>
+                        <p> Angiotensin II receptor blocker reducing high blood pressure risk.</p>
+                        <label>Quantity: <input type="number" name="Losartan" min="0" value="0"></label>
+                    </div>
+                </div>
+                    <div class="medicine-item">
+                        <img src="./Images/Metoprolol.jpg" alt="Metoprolol">
+                        <div class="medicine-info">
+                            <p><strong>Metoprolol</strong></p>
+                            <p style="color: rgb(105, 105, 105);"><strong>Price: $10 per unit</strong></p>
+                            <p>Beta-blocker managing hypertension, angina, and heart attacks.</p>
+                            <label>Quantity: <input type="number" name="Metoprolol" min="0" value="0"></label>
+                        </div>
+                    </div>
+                        <div class="medicine-item">
+                            <img src="./Images/Hydrochlorothiazide.jpg" alt="Hydrochlorothiazide">
+                            <div class="medicine-info">
+                                <p><strong>Hydrochlorothiazide</strong></p>
+                                <p ><strong>Price: $8 per unit</strong></p>
+                                <p> Diuretic reducing high blood pressure by removing excess water.</p>
+                                <label>Quantity: <input type="number" name="Hydrochlorothiazide" min="0" value="0"></label>
+                            </div>
+            </div>
+        </section>
+
+                       <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button type="button" onclick="addToOrder()">Add to Order</button>
+                <button type="button" onclick="saveFavorite()">Add to Favorites</button>
+                <button type="button" onclick="applyFavorite()">Apply Favorites</button>
+                <button type="button" onclick="clearFavorite()">Clear Favorites</button>
+            </div>
+        </form>
+
+        <!-- Order Summary Table -->
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="orderItems">
+                <!-- Dynamic rows will be added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Price</td>
+                    <td id="totalPrice">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button class="buy-button" onclick="proceedToCheckout()">Buy Now</button>
+    </main>
+</body>
+</html>
