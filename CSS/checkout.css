@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #afefff;
+}
+
+header {
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    border: 2px solid #0092b7;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0092b7;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 3px solid #0092b7   ;
+    border-radius: 50px;
+    background-color: #f8fcf9;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #047e9d;
+    text-align: center;
+}
+
+#summaryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+#summaryTable th, #summaryTable td {
+    border: 1px solid #0092b7;
+    padding: 8px;
+    text-align: left;
+}
+
+#summaryTable th {
+    background-color: #0092b7;
+    color: white;
+}
+
+#checkoutForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea, input, select, button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    border-color: #0092b7;
+    border-width: 0.5px;
+}
+
+button {
+    background-color: #0092b7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00afdb;
+}

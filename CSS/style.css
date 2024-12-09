@@ -1,0 +1,407 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    animation: fadeIn 1.5s ease-in-out;
+    /* Example: Radial gradient from white to Blue */
+    background: radial-gradient(circle, #1eccf8, #ccc);
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 2.5rem;
+    color: #0092b7;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 3px solid #0092b7   ;
+    border-radius: 50px;
+    background-color: #f8fcf9;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category h2 {
+    font-size: 1.8rem;
+    color: #0092b7;
+    margin-bottom: 20px;
+}
+
+.medicine-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    border-bottom: 1px solid #0092b7;
+    padding-bottom: 70px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.medicine-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medicine-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.medicine-info {
+    flex: 1;
+    padding-left: 25%;
+}
+
+.medicine-info strong{
+    font-size: x-large;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #0092b7;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .medicine-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .medicine-item img {
+        width: 150px;
+    }
+
+    .medicine-info {
+        padding-left: 0;
+    }
+}
+
+.medicine-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    margin-left: 10px;
+    font-size: 1rem;
+    border: 1px solid #0092b7;
+    border-radius: 5px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 8px #0092b7;
+    transform: scale(1.05);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.action-buttons button {
+    background: #037996;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons button:hover {
+    background: #00a6cf;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Order Summary Table */
+#orderTable {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#orderTable th, #orderTable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #037996;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#orderTable th {
+    background: #00B8E6;
+    color: #030303;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#orderTable tbody tr:hover {
+    background-color: #f1f9f4;
+    animation: pulse 0.5s ease-in-out;
+}
+
+#orderTable tfoot td {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0092b7;
+    background: #e8f8f2;
+}
+
+#totalPrice {
+    color: #0092b7;
+    background: #f0fbf5;
+    border-radius: 5px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #orderTable {
+        width: 100%;
+        border: 0;
+        font-size: 0.9rem;
+    }
+
+    #orderTable thead {
+        display: none; /* Hide the table headers */
+    }
+
+    #orderTable tbody tr {
+        display: block; /* Each row becomes a block */
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #orderTable td {
+        display: block; /* Each cell becomes a block */
+        text-align: right; /* Align text to the right */
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #orderTable td:last-child {
+        border-bottom: 0; /* Remove the last cell's border */
+    }
+
+    #orderTable td::before {
+        content: attr(data-label); /* Use the `data-label` attribute for column names */
+        float: left; /* Align column labels to the left */
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #0092b7;
+    }
+
+    #orderTable tfoot td {
+        font-size: 1rem; /* Adjust footer font size */
+        text-align: left;
+        padding: 10px 0;
+    }
+}
+
+/* General Remove Button Styles */
+#orderTable button {
+    background-color: #ff4d4f; /* Vibrant red to indicate "Remove" */
+    color: white; /* White text for contrast */
+    border: none; /* Remove default browser borders */
+    padding: 8px 16px; /* Comfortable padding */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 0.9rem; /* Slightly smaller text */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+    text-transform: uppercase; /* Capitalize text for emphasis */
+    font-weight: bold; /* Bold text for visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover State */
+#orderTable button:hover {
+    background-color: #d9363e; /* Darker red on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Stronger shadow for emphasis */
+}
+
+/* Active State */
+#orderTable button:active {
+    background-color: #b71d24; /* Even darker red when pressed */
+    transform: scale(0.95); /* Slightly shrink to indicate press */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Reduce shadow */
+}
+
+/* Focus State (for accessibility) */
+#orderTable button:focus {
+    outline: 2px solid #ff7875; /* Outline to indicate focus */
+    outline-offset: 2px; /* Space between outline and button */
+}
+
+/* Mobile-Responsive Adjustment */
+@media (max-width: 768px) {
+    #orderTable button {
+        width: 100%; /* Full-width button on small screens */
+        padding: 10px; /* Adjust padding */
+        font-size: 1rem; /* Slightly larger text for accessibility */
+    }
+}
+
+
+/* Buy Now Button */
+.buy-button {
+    background: #037996;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    animation: bounceIn 1.2s ease-out;
+}
+
+.buy-button:hover {
+    background: #01a2ca;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes growWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-color: #f1f9f4;
+    }
+    50% {
+        background-color: #e8f8f2;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .medicine-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #orderTable {
+        font-size: 0.9rem;
+    }
+}
+
+
+  
