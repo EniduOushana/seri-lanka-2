@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #5b9bd5, #2e73ab); /* Shades of blue */
+    background: linear-gradient(to bottom right, #4facfe, #2e64ab, #005bea); /* Vibrant shades of blue with a touch of depth */
     background-size: cover;
     background-position: center;
 }
