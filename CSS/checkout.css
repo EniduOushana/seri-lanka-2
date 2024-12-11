@@ -52,7 +52,7 @@ h2 {
 
 #summaryTable th {
     background-color: #0092b7;
-    color: white;
+    color: black;
 }
 
 #checkoutForm {
@@ -76,7 +76,7 @@ textarea, input, select, button {
 
 button {
     background-color: #0092b7;
-    color: white;
+    color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
