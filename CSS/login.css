@@ -12,18 +12,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../Images/login-back.jpg') no-repeat;
+    background: linear-gradient(to bottom right, #5b9bd5, #2e73ab); /* Shades of blue */
     background-size: cover;
     background-position: center;
 }
 
 .wrapper {
     width: 420px;
-    background: rgba(0, 0, 0, 0.7); /* Adjusted for better contrast */
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.9); /* Light blue with transparency for readability */
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333; /* Darker text color */
     border-radius: 10px;
     padding: 30px 40px;
 }
@@ -31,7 +31,7 @@ body {
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
-    color: #ffffff; /* Ensures sufficient contrast */
+    color: #1d3557; /* Darker blue for headings */
 }
 
 .wrapper .input-box {
@@ -44,18 +44,18 @@ body {
 .input-box input {
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.1); /* Improved background contrast */
+    background: rgba(255, 255, 255, 0.7); /* Subtle background for inputs */
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .5); /* Adjusted for better visibility */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Slightly darker border */
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
+    color: #333; /* Darker text inside inputs */
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder {
-    color: rgba(255, 255, 255, 0.8); /* Slightly darker placeholder for contrast */
+    color: #666; /* Medium gray placeholder for visibility */
 }
 
 .input-box i {
@@ -64,7 +64,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-    color: #ffffff; /* Ensures sufficient contrast */
+    color: #2e73ab; /* Accent color for icons */
 }
 
 .wrapper .remember-forgot {
@@ -72,16 +72,16 @@ body {
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
-    color: #ffffff;
+    color: #333; /* Darker text */
 }
 
 .remember-forgot label input {
-    accent-color: #ffffff;
+    accent-color: #2e73ab;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #80d4ff; /* Lighter shade for improved contrast */
+    color: #1d3557; /* Accessible blue for links */
     text-decoration: none;
 }
 
@@ -92,26 +92,30 @@ body {
 .wrapper .btn {
     width: 100%;
     height: 45px;
-    background: #80d4ff; /* Enhanced button color for visibility */
+    background: #2e73ab; /* Blue button background */
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #fff; /* White text for buttons */
     font-weight: 600;
+}
+
+.wrapper .btn:hover {
+    background: #5b9bd5; /* Lighter blue on hover */
 }
 
 .wrapper .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
-    color: #ffffff; /* Consistent text contrast */
+    color: #333; /* Darker text */
 }
 
 .register-link p a {
-    color: #80d4ff; /* Matches hover color for links */
+    color: #1d3557; /* Same link color as above */
     text-decoration: none;
     font-weight: 600;
 }
