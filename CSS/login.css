@@ -15,12 +15,11 @@ body {
     background: url('../Images/login-back.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    
 }
 
 .wrapper {
     width: 420px;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.7); /* Adjusted for better contrast */
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
@@ -32,6 +31,7 @@ body {
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
+    color: #ffffff; /* Ensures sufficient contrast */
 }
 
 .wrapper .input-box {
@@ -44,10 +44,10 @@ body {
 .input-box input {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.1); /* Improved background contrast */
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, .5); /* Adjusted for better visibility */
     border-radius: 40px;
     font-size: 16px;
     color: #fff;
@@ -55,7 +55,7 @@ body {
 }
 
 .input-box input::placeholder {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8); /* Slightly darker placeholder for contrast */
 }
 
 .input-box i {
@@ -64,6 +64,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    color: #ffffff; /* Ensures sufficient contrast */
 }
 
 .wrapper .remember-forgot {
@@ -71,15 +72,16 @@ body {
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
+    color: #ffffff;
 }
 
 .remember-forgot label input {
-    accent-color: #fff;
+    accent-color: #ffffff;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #fff;
+    color: #80d4ff; /* Lighter shade for improved contrast */
     text-decoration: none;
 }
 
@@ -90,7 +92,7 @@ body {
 .wrapper .btn {
     width: 100%;
     height: 45px;
-    background: #fff;
+    background: #80d4ff; /* Enhanced button color for visibility */
     border: none;
     outline: none;
     border-radius: 40px;
@@ -105,10 +107,11 @@ body {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
+    color: #ffffff; /* Consistent text contrast */
 }
 
 .register-link p a {
-    color: #fff;
+    color: #80d4ff; /* Matches hover color for links */
     text-decoration: none;
     font-weight: 600;
 }
